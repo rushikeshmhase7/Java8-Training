@@ -31,6 +31,10 @@ public static void main(String[] args) {
 
 	List<Integer> squaresList = numbers.stream().map( i -> i*i).distinct().collect(Collectors.toList());
 	 System.out.println(squaresList);
+	 
+	 Long count=numbers.stream().count();
+	 System.out.println(count);
+	 
 }
 
 
